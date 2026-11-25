@@ -69,15 +69,14 @@ section.section-intro{
     color: var(--primary);
     padding: 2% 5%;
     img{
-        margin-left: 30%;
-        width: 50%;
+        width: 75%;
     }
     p, h2{
-        margin: 2.5% -10%;
+        margin: 5% 0%;
     }
     p.accent{
         font-size: 1.5rem;
-        margin-top: 18%;
+        margin-top: 25%;
     }
     h2{
         font-size: 3rem;
@@ -107,9 +106,15 @@ section.section-reservation{
         .form-date-time{
             margin-top: 3%;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             input{
-                width: 15vw;
+                width: 100%;
+            }
+            div{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
             }
         }
         input{
@@ -120,6 +125,36 @@ section.section-reservation{
             margin: 5% 0;
             padding: 1%;
             width: 100%;
+        }
+    }
+}
+
+/* FOOTER */
+footer{
+    padding: 1% 2%;
+    color: var(--primary);
+    background-color: var(--bg-header);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 10%;
+    ul{
+        width: 25%;
+    }
+    li{
+        list-style-type: none;
+    }
+    .first-element{
+        font-weight: bold;
+        margin-bottom: 3%;
+    }
+    a{
+        color: var(--primary);
+        text-decoration: none;
+    }
+    .last-ul{
+        li:first-child{
+            padding-top: 5%;
+            margin: 15% 0 5% 0;
         }
     }
 }
