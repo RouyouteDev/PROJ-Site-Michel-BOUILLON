@@ -40,7 +40,8 @@ header{
 .hero-section{
     color: var(--primary);
     padding: 3% 2.5%;
-    background-color: var(--bg-header);
+    background-image: url("/assets/imgs/cover_dark.jpg");
+    background-size: 100% 100%;
     .intro-hero{
         color: var(--accent);
     }
