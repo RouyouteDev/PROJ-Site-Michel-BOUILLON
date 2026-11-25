@@ -89,10 +89,19 @@ section.section-intro{
 
 /* SECTION RESERVATION AVEC FORM */
 section.section-reservation{
-    background-color: var(--bg-header);
+    background-image: url("/assets/imgs/makereservation_dark.jpg");
     color: var(--primary);
     margin-top: 5%;
     text-align: center;
+    padding: 5%;
+    h3{
+        margin: 2.5%;
+        font-size: 3rem;
+    }
+    h2{
+        margin: 2.5%;
+        font-size: 1rem;
+    }
     form{
         margin: 0 25%;
         padding: 2%;
