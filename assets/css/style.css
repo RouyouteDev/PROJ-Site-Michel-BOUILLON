@@ -28,24 +28,18 @@ header{
         font-size: 1.25rem;
     }
     ul{
-        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        li{
+            padding: 15%;
+            list-style-type: none;
+        }
     }
     .reservation{
         color: var(--color-btnreservation);
         background-color: var(--accent);
         padding: 1.25%;
         font-weight: bold;
-        margin-bottom: 3%;
-    }
-    a{
-        color: var(--primary);
-        text-decoration: none;
-    }
-    .last-ul{
-        li:first-child{
-            padding-top: 5%;
-            margin: 15% 0 5% 0;
-        }
     }
 }
 
@@ -94,7 +88,7 @@ section.section-intro{
     }
 }
 
-/* SEFCTION RESERVATION AVEC FORM */
+/* SECTION RESERVATION AVEC FORM */
 section.section-reservation{
     background-color: var(--bg-header);
     color: var(--primary);
