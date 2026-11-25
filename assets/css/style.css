@@ -1,0 +1,38 @@
+:root {
+    --primary: rgb(230, 234, 240);  
+    --color-btnreservation: rgb(0,0,0);
+    
+    --bg-header: rgb(15, 21, 28); 
+    --bg-btnreservation: rgb(217, 178, 119);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5%;
+    background-color: var(--bg-header);
+    color: var(--primary);
+    h1{
+        font-size: 1.25rem;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        li{
+            padding: 15%;
+            list-style-type: none;
+        }
+    }
+    .reservation{
+        color: var(--color-btnreservation);
+        background-color: var(--bg-btnreservation);
+        padding: 1.25%;
+        font-weight: bold;
+    }
+}
