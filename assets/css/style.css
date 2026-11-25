@@ -1,38 +1,62 @@
 :root {
-    --primary: rgb(230, 234, 240);  
-    --color-btnreservation: rgb(0,0,0);
-    
-    --bg-header: rgb(15, 21, 28); 
-    --bg-btnreservation: rgb(217, 178, 119);
+	--primary: rgb(230, 234, 240);
+	--color-btnreservation: rgb(0, 0, 0);
+
+	--bg-header: rgb(15, 21, 28);
+	--bg-btnreservation: rgb(217, 178, 119);
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2.5%;
-    background-color: var(--bg-header);
-    color: var(--primary);
-    h1{
-        font-size: 1.25rem;
-    }
-    ul{
-        display: flex;
-        justify-content: space-between;
-        li{
-            padding: 15%;
-            list-style-type: none;
-        }
-    }
-    .reservation{
-        color: var(--color-btnreservation);
-        background-color: var(--bg-btnreservation);
-        padding: 1.25%;
-        font-weight: bold;
-    }
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2.5%;
+	background-color: var(--bg-header);
+	color: var(--primary);
+
+	h1 {
+		font-size: 1.25rem;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-between;
+
+		li {
+			padding: 15%;
+			list-style-type: none;
+		}
+	}
+
+	.reservation {
+		color: var(--color-btnreservation);
+		background-color: var(--bg-btnreservation);
+		padding: 1.25%;
+		font-weight: bold;
+	}
 }
+
+footer {
+	color: #EEEEEE;
+	background-color: #282828;
+}
+
+.footer-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: auto;
+	height: auto;
+	padding-left: 10vh;
+	padding-right: 10vh;
+	padding-bottom: 10vh;
+	padding-top: 5vh;
+	gap: 2vh;
+}
+
+.footer-grid-element {}
