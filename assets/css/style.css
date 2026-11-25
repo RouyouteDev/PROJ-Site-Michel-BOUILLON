@@ -43,6 +43,7 @@ header {
 }
 
 footer {
+	margin-top: 3vh;
 	color: #EEEEEE;
 	background-color: #282828;
 }
@@ -50,13 +51,14 @@ footer {
 .footer-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
 	width: auto;
 	height: auto;
 	padding-left: 10vh;
 	padding-right: 10vh;
 	padding-bottom: 10vh;
 	padding-top: 5vh;
-	gap: 2vh;
+	gap: 8vh;
 }
 
 .footer-grid-element {}
