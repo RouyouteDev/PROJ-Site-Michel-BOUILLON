@@ -42,23 +42,29 @@ header {
 	}
 }
 
-footer {
-	margin-top: 3vh;
-	color: #EEEEEE;
-	background-color: #282828;
+footer{
+    padding: 1% 2%;
+    color: var(--primary);
+    background-color: var(--bg-header);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    li{
+        list-style-type: none;
+    }
+    .first-element{
+        font-weight: bold;
+        margin-bottom: 3%;
+    }
+    a{
+        color: var(--primary);
+        text-decoration: none;
+    }
+    .last-ul{
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1 / 5;
+        li{
+            padding: 5%  0 3% 0;
+        }
+    }
 }
-
-.footer-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, auto);
-	width: auto;
-	height: auto;
-	padding-left: 10vh;
-	padding-right: 10vh;
-	padding-bottom: 10vh;
-	padding-top: 5vh;
-	gap: 8vh;
-}
-
-.footer-grid-element {}
