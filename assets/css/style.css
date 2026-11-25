@@ -12,6 +12,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    color: var(--primary);
+    background-color: var(--bg-header);
+}
 
 /* HEADER */
 header{
@@ -20,7 +24,6 @@ header{
     justify-content: space-between;
     padding: 0 2.5%;
     background-color: var(--bg-header);
-    color: var(--primary);
     h1{
         font-size: 1.25rem;
     }
@@ -85,12 +88,48 @@ section.section-intro{
     }
 }
 
+/* SEFCTION RESERVATION AVEC FORM */
+section.section-reservation{
+    background-color: var(--bg-header);
+    color: var(--primary);
+    margin-top: 5%;
+    text-align: center;
+    form{
+        margin: 0 25%;
+        padding: 2%;
+        text-align: left;
+        fieldset{
+            background-color: black;
+            border-color: rgb(36, 34, 34);
+            border-style: solid;
+            padding: 2% 5% 0 5%;
+        }
+        .form-date-time{
+            margin-top: 3%;
+            display: flex;
+            justify-content: space-between;
+            input{
+                width: 15vw;
+            }
+        }
+        input{
+            width: 100%;
+        }
+        button{
+            border-style: none;
+            margin: 5% 0;
+            padding: 1%;
+            width: 100%;
+        }
+    }
+}
+
 /* POUR LES BTNS DE RESERVATION */
 .reservation{
+    text-align: center;
     color: var(--color-btnreservation);
     background-color: var(--accent);
     font-weight: bold;
-    text-align: center;
 }
 
 /* ACCENT DE COULEUR */

@@ -34,31 +34,35 @@
             <p class="txtintro">Chef et gérant du restaurant, Michel Bouillon cuisine avec exigence et générosité. Chaque assiete raconte le produit, la saison et le plair de partager</p>
         </div>
     </section>
-    <section>
+    <section class="section-reservation">
         <h2>RESERVATION</h2>
         <h3>Réservez votre table</h3>
         <p>Choissisez votre créneau, nous confirmons votre venue.</p>
         <form>
             <fieldset>
                 <legend>Réservation</legend>
+                
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="name" required>
-
-                <div class="form-date-time">
-                    <label for="date">Date :</label>
-                    <input type="date" id="date" name="date" required>
-                    <label for="time">Heure :</label>
-                    <input type="time" id="time" name="time" required>
-                </div>
-
+                
                 <label for="guests">Nombre de personnes :</label>
                 <input type="number" id="guests" name="guests" min="1" max="20" required>
-
-                <button type="submit">CONFIRMER LA RESERVATION</button>
+                
+                <div class="form-date-time">
+                    <div>
+                        <label for="date">Date :</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                        <label for="time">Heure :</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <button class="reservation" type="submit">CONFIRMER LA RESERVATION</button>
         </form>
     </section>
     <section class="section-carte">
-        <p class="txt-info">LA CARTE</p>
+        <p>LA CARTE</p>
         <h2>Nos plats signature</h2>
         <div class="grid-carte">
             <div class="carte-item">
