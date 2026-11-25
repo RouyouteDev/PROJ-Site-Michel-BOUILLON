@@ -1,0 +1,11 @@
+:root {
+    --primary: rgb(217, 224, 232);  
+    --bg-section: rgb(15, 21, 28); 
+    --bg-top-section: rgb(20, 27, 36);  
+    --bg-body: rgb(10, 14, 19);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
