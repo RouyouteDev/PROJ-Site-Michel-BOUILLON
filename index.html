@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bon Appétit | Michel Bouillon</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Bon Appétit</h1>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li>Carte</li>
+                <li>Galerie</li>
+                <li>Témoignages</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <p class="reservation">Réserver</p>
+    </header>
+    <section class="hero-sectoin">
+        <p class="intro-hero">RESTAURANT - CUISINE DU CHEF</p>
+        <h2>Une table généreuse, signée Michel Bouillon</h2>
+        <p>Des produits de saison, un savoir-faire maison et une ambiance chaleureuse, Réservez en ligne, sans décrocher le téléphone</p>
+        <p class="reservation">Réserver</p>
+    </section>
+    <section class="section-intro">
+        <p>LE CHEF</p>
+        <h2>La passion du geste juste</h2>
+        <p>Chef et gérant du restaurant, Michel Bouillon cuisine avec exigence et générosité. Chaque assiete raconte le produit, la saison et le plair de partager</p>
+    </section>
+    <section>
+        <h2>RESERVATION</h2>
+        <h3>Réservez votre table</h3>
+        <p>Choissisez votre créneau, nous confirmons votre venue.</p>
+        <form>
+            <fieldset>
+                <legend>Réservation</legend>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
 
+                <div class="form-date-time">
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Heure :</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <label for="guests">Nombre de personnes :</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+                <button type="submit">CONFIRMER LA RESERVATION</button>
+        </form>
+    </section>
+    <section class="section-carte">
+        <p>LA CARTE</p>
+        <h2>Nos plats signature</h2>
+        <div class="grid-carte">
+            <div class="carte-item">
+                <img src="images/plat1.jpg" alt="Plat 1">
+                <h3>Pièce de boeuf, légumes glacés</h3>
+                <p>Boeuf maturé, carottes fanes et jus corsé.</p>
+            </div>
+            <div class="carte-item">
+                <img src="images/plat1.jpg" alt="Plat 1">
+                <h3>Le Burger du Chef</h3>
+                <p>Pain brioché, boeuf haché maison, oignons rosés.</p>
+            </div>
+            <div class="carte-item">
+                <img src="images/plat1.jpg" alt="Plat 1">
+                <h3>Crevettes, émulsion safranée</h3>
+                <p>Crevettes snackées, fenouil et herbes fraîches.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
