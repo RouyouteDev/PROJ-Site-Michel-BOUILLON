@@ -1,3 +1,4 @@
+/* VARIABLES A REUTILISER POUR TOUT LE SITE [POUR MAINTENANCE ++] */
 :root {
     --primary: rgb(230, 234, 240);  
     --color-btnreservation: rgb(0,0,0);
@@ -6,11 +7,13 @@
     --accent: rgb(217, 178, 119);
 }
 
+/* RESET CSS */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* HEADER */
 header{
     display: flex;
     align-items: center;
@@ -37,10 +40,11 @@ header{
     }
 }
 
+/* HERO SECTION */
 .hero-section{
     color: var(--primary);
     padding: 3% 5%;
-    background-image: url("/assets/imgs/cover_dark.jpg");
+    background-image: url("/assets/imgs/cover_dark.jpg"); /*A CORRIGER L AFFICHAGE DE L IMAGE DEGEULASSE - WYATT*/
     background-size: 100% 100%;
     h2{
         padding: 2% 0;
@@ -54,6 +58,7 @@ header{
     }
 }
 
+/* SECTION INTRO */
 section.section-intro{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -80,6 +85,7 @@ section.section-intro{
     }
 }
 
+/* POUR LES BTNS DE RESERVATION */
 .reservation{
     color: var(--color-btnreservation);
     background-color: var(--accent);
@@ -87,6 +93,7 @@ section.section-intro{
     text-align: center;
 }
 
+/* ACCENT DE COULEUR */
 .accent{
     color: var(--accent);
 }
