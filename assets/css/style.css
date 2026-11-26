@@ -168,6 +168,32 @@ footer{
     }
 }
 
+/* SECTION CARD  */
+.section-carte{
+    p,h2{
+        margin: 2% 0;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    padding: 2.5% 10%;
+    .grid-carte{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10%;
+        .carte-item{
+            img{
+                width: 100%;
+                height: 25vh;
+                border-radius: 10px;
+            }
+            *{
+                margin: 4% 0;
+            }
+        }
+    }
+}
+
 /* POUR LES BTNS DE RESERVATION */
 .reservation{
     text-align: center;
