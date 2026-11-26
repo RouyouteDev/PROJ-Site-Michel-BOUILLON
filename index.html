@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bon Appétit | Michel Bouillon</title>
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bon Appétit</h1>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li>Carte</li>
+                <li>Galerie</li>
+                <li>Avis</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <p class="reservation">Réserver</p>
+    </header>
+    <section class="hero-section">
+        <p class="accent">RESTAURANT - CUISINE DU CHEF</p>
+        <h2>Une table généreuse, signée Michel Bouillon</h2>
+        <p>Des produits de saison, un savoir-faire maison et une ambiance chaleureuse, Réservez en ligne, sans décrocher le téléphone</p>
+        <p class="reservation">Réserver</p>
+    </section>
+    <section class="section-intro">
+        <img src="./assets/imgs/chef_dark.jpg" alt="Chef Michel Bouillon">
+        <div>
+            <p class="accent">LE CHEF</p>
+            <h2>La passion du geste juste</h2>
+            <p class="txtintro">Chef et gérant du restaurant, Michel Bouillon cuisine avec exigence et générosité. Chaque assiete raconte le produit, la saison et le plair de partager</p>
+        </div>
+    </section>
+    <section class="section-reservation">
+        <h2 class="accent">RESERVATION</h2>
+        <h3>Réservez votre table</h3>
+        <p>Choissisez votre créneau, nous confirmons votre venue.</p>
+        <form id="reservation-form" method="post">
+            <fieldset>
+                <legend>Réservation</legend>
+                
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="guests">Nombre de personnes :</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
+                
+                <div class="form-date-time">
+                    <div>
+                        <label for="date">Date :</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                        <label for="time">Heure :</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <button class="reservation" type="submit">CONFIRMER LA RESERVATION</button>
+        </form>
+    </section>
+    <!-- FAIT CETTE SECTION LA CLEMENT -->
+    <section class="section-carte">
+        <p class="accent">LA CARTE</p>
+        <h2>Nos plats signature</h2>
+        <div class="grid-carte">
+            <div class="carte-item">
+                <img src="./assets/imgs/food_1_dark.jpg" alt="Plat 1">
+                <h3>Pièce de boeuf, légumes glacés</h3>
+                <p>Boeuf maturé, carottes fanes et jus corsé.</p>
+            </div>
+            <div class="carte-item">
+                <img src="./assets/imgs/food_4_dark.jpg" alt="Plat 1">
+                <h3>Le Burger du Chef</h3>
+                <p>Pain brioché, boeuf haché maison, oignons rosés.</p>
+            </div>
+            <div class="carte-item">
+                <img src="./assets/imgs/food_5_dark.jpg" alt="Plat 1">
+                <h3>Crevettes, émulsion safranée</h3>
+                <p>Crevettes snackées, fenouil et herbes fraîches.</p>
+            </div>
+            <div class="carte-item">
+                <img src="./assets/imgs/food_7_dark.jpg" alt="Plat 1">
+                <h3>Magret au romarin</h3>
+                <p>Magret rosé, œuf mollet et romarin grillé.</p>
+            </div>
+            <div class="carte-item">
+                <img src="./assets/imgs/food_10_dark.jpg" alt="Plat 1">
+                <h3>Thon mi-cuit, sauce piquante</h3>
+                <p>Thon snacké, pousses croquantes et agrumes</p>
+            </div>
+            <div class="carte-item">
+                <img src="./assets/imgs/food_11_dark.jpg" alt="Plat 1">
+                <h3>Tagliatelles aux herbes</h3>
+                <p>Pâtes fraîches, ail, citron et herbes du jardin.</p>
+            </div>
+        </div>
+    </section>
+	<footer>
+        <ul>
+            <li class="first-element">Bon Appetit</li>
+            <li>Rue imaginaire, Bon Appetit</li>
+            <li>80000 Amiens</li>
+        </ul>
+        <ul>
+            <li class="first-element">Contact</li>
+            <li>+01 23 45 67 89</li>
+            <li>email@example.com</li>
+        </ul>
+        <ul>
+            <li class="first-element">Horaires</li>
+            <li>Lundi - Vendredi: 12h - 14h / 19h - 22h</li>
+            <li>Samedi: 19h - 22h</li>
+        </ul>
+        <ul>
+            <li class="first-element">Suivez-nous</li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <ul class="last-ul">
+            <li>© 2026 Bon Appétit · Crédits : Clement, Wyatt, Jules, photos fournies par le client</li>
+            <li>Mentions légales</li>
+        </ul>
+	</footer>
+</body>
+
+</html>
